@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group 'my.gakshint.samples'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.glassfish.jersey.core', name: 'jersey-server', version: '2.27'
+    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.27'
+    compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-servlet', version: '2.27'
+    compile group: 'org.glassfish.jersey.inject', name: 'jersey-hk2', version: '2.27'
+}
